@@ -71,8 +71,9 @@ button:disabled{
         margin: 0;
         width: 100vw;
         height: 100vh;
-        background: url("../bg_desktop.png") no-repeat;
-
+        background-image: url("../img/bg_desktop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -91,29 +92,36 @@ button:disabled{
         margin: auto;
         border-radius: 20px;
         background-color: white;
+        display: flex;
+        flex-direction: column;
 
     }
-    body .popup h1 {
+    body .popup .wrapper, body .popup .text-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%
+    }
+
+    body .popup .text-wrapper h1 {
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
         margin-bottom: 22px;
     }
-    body .popup h2 {
+    body .popup .text-wrapper h2 {
         font-weight: 400;
         font-size: 18px;
         line-height: 22px;
         margin-bottom: 39px;
+        margin-top: 0;
     }
-    body .popup__images{
+    body .wrapper .popup__images{
         width: 144px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         margin: 0 auto 29px auto;
-
-
     }
 
 
@@ -139,7 +147,34 @@ button:disabled{
         margin: 0;
 
     }
-
-
+    @media(orientation: portrait){
+        body{
+            background-image: url("../img/bg_tablet.png");
+        }
+    }
+    @media (max-width: 1024px){
+        body{
+            background-image: url("../img/bg_iphone_8.png");
+        }
+        body footer{
+            max-width: calc(100vw - 30px);
+        }
+    }
+    @media (max-height: 520px){
+        body .popup{
+            flex-direction: row;
+            max-width: 545px;
+            justify-content: space-between;
+            z-index: 2;
+        }
+        body .popup .wrapper, body .popup .text-wrapper{
+            width: calc(50% - 20px)
+        }
+        body footer{
+            z-index: 0
+        }
+    }
 
 }
+
+
